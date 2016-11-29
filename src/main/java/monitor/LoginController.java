@@ -18,4 +18,9 @@ public class LoginController {
         ModelAndView mv = new ModelAndView("index/index","command","LOGIN SUCCESS, " + username);
         return mv;
     }
+    @RequestMapping(value="addTel")
+    public ModelAndView getAddTel(HttpServletRequest request,HttpServletResponse response){
+        ModelAndView mv = new ModelAndView("login/AddTel");
+        return mv;
+    }
 }

@@ -12,7 +12,7 @@
     <div id="index-banner" class="index-banner section no-pad-bot primary-bg">
       <div class="container">
         <h1 class=" center-on-small-only  text-light ">测试机管理</h1>
-        <input type="button" value="添加机器" onClick="javascript:window.open('login/AddTel.jsp','','scrollbars=yes,width=600,height=500')" >
+        <input type="button" value="添加机器" onClick="javascript:window.open('addTel','','scrollbars=yes,width=600,height=500')" >
         <br>
       </div>
     </div>
@@ -45,11 +45,9 @@
             <th>操作</th>
           </tr>
           </thead>
-          <div>
           <tbody id="machinelist">
           <!-- ajax填充列表 -->
           </tbody>
-          </div>
         </table><div class="pagging">
         <button id="firstPage">首页</button>
         <button id="previous">上一页</button>
