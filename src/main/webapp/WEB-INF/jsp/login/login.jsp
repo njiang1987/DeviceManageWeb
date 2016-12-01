@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 <head>
-<link href="<c:url value="/resources/css/styles.css" />" rel="stylesheet">
+<link href="<c:url value="/resources/css/index.css" />" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
 <title>手机归属列表</title>
 </head>
@@ -55,7 +55,6 @@
         <button id="next">下一页</button>
         <button id="last">尾页</button>
           共${totalPageSize}条记录
-
 
   </div>
      </div>

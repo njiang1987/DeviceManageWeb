@@ -4,7 +4,7 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>Insert title here</title>
+<title>欢迎来到这个页面~~</title>
 </head>
 <body>
 <main>
@@ -28,47 +28,42 @@
         <div class="row">
           <div class="input-field col s6">
           <label></label>
-        <select id ="platform" name="platform" >
-          <c:if test ="${platform==null}">
-            <option value="" disabled selected>※选择平台</option>
-          </c:if>
-          <c:if test ="${platform !=null}">
-        <option value="${platform}" >${platform}</option>
-          </c:if>
-          <option value="Android">Android</option>
-          <option value="iOS">iOS</option>
-        </select>
+    <select id="platform" name="platform">
+    <option value="">请选择手机系统</option>
+    <option value="android">android系统</option>
+    <option value="ios">ios系统</option>
+   </select>
           </div>
         </div>
       <div class="row">
           <div class="input-field col s6">
-            <input id="model" name ="model"  type="text"  value= "${model}" class="validate">
-            <label for="model">※手机名称</label>
+            <input id="model" name ="model"  type="text"  data-default-value="请输入手机名称" class="validate">
+            <label for="model">手机名称</label>
           </div>
         </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="os" name ="os"  type="text" value ="${os}" class="validate">
-          <label for="os">※手机版本</label>
+          <input id="os" name ="os"  type="text" data-default-value="请输入手机版本" class="validate">
+          <label for="os">手机版本</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="NO" name ="NO"  type="text" value ="${nub}" class="validate">
-          <label for="NO">※手机编号</label>
+          <input id="NO" name ="NO"  type="text" data-default-value="请输入手机编号" class="validate">
+          <label for="NO">手机编号</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="user" name ="user"  type="text" value ="${user}" class="validate">
-          <label for="user">※使用人</label>
+          <input id="user" name ="user"  type="text" data-default-value="请输入手机使用人" class="validate">
+          <label for="user">使用人</label>
         </div>
       </div>
       <c:if test ="${id !=null}">
       <div class="row"  >
         <div class="col s6">
           <label>借用日期:</label>
-          <input type="datetime-local"   id = "modify" name ="modify" value="${modify}" >
+          <input type="datetime-local"   id = "modify" name ="modify" value="2015/03/27 10:41">    
         </div>
         </div>
       </c:if>
