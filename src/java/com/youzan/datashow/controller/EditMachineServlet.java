@@ -1,11 +1,11 @@
-package monitor;
+package com.youzan.datashow.controller;
 
 /**
  * Created by shenzhaohua on 16/7/16.
  */
 
-import util.TimeUtil;
-import controller.packageData;
+import com.youzan.datashow.util.TimeUtil;
+
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
@@ -16,7 +16,7 @@ import java.util.Calendar;
 
 
 
-public class DisplayMachineServlet extends HttpServlet {
+public class EditMachineServlet extends HttpServlet {
 
 
     public void doGet(HttpServletRequest request, HttpServletResponse response)
