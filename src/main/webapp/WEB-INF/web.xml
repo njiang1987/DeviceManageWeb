@@ -17,6 +17,16 @@
         <servlet-name>display2</servlet-name>
         <url-pattern>/</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+		<servlet-name>EditMachineServlet</servlet-name>
+		<servlet-class>controller.EditMachineServlet</servlet-class>
+	</servlet>
+
+	<servlet-mapping>
+		<servlet-name>EditMachineServlet</servlet-name>
+		<url-pattern>/EditMachineServlet</url-pattern>
+	</servlet-mapping>
 
     <welcome-file-list>
         <welcome-file>index.jsp</welcome-file>
