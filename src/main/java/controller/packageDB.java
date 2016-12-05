@@ -10,8 +10,8 @@ import java.sql.PreparedStatement;
 import java.sql.SQLException;
 
 public class packageDB {
-  public static final String url = "jdbc:mysql://localhost:3306/androidapk?useUnicode=true&characterEncoding=UTF-8";
-    public static final String name = "com.mysql.jdbc.Driver";
+  public static final String url = "jdbc:mysql://localhost:3306/Monitor?useUnicode=true&characterEncoding=UTF-8";
+  public static final String name = "com.mysql.jdbc.Driver";
   public static final String user = "root";
   public static final String password = "123456";
 
