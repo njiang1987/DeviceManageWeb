@@ -37,25 +37,25 @@
         </div>
       <div class="row">
           <div class="input-field col s6">
-            <input id="model" name ="model"  type="text"  data-default-value="请输入手机名称" class="validate">
+            <input id="tel_name" name ="tel_name"  type="text"  data-default-value="请输入手机名称" class="validate">
             <label for="model">手机名称</label>
           </div>
         </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="os" name ="os"  type="text" data-default-value="请输入手机版本" class="validate">
+          <input id="os" name ="tel_version"  type="text" data-default-value="请输入手机版本" class="validate">
           <label for="os">手机版本</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="NO" name ="NO"  type="text" data-default-value="请输入手机编号" class="validate">
+          <input id="NO" name ="imei"  type="text" data-default-value="请输入手机编号" class="validate">
           <label for="NO">手机编号</label>
         </div>
       </div>
       <div class="row">
         <div class="input-field col s6">
-          <input id="user" name ="user"  type="text" data-default-value="请输入手机使用人" class="validate">
+          <input id="user" name ="borrow_name"  type="text" data-default-value="请输入手机使用人" class="validate">
           <label for="user">使用人</label>
         </div>
       </div>

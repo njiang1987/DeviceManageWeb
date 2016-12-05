@@ -1,4 +1,4 @@
-package controller;
+package service;
 
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;

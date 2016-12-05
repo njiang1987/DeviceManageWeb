@@ -20,7 +20,7 @@
     
     <servlet>
 		<servlet-name>EditMachineServlet</servlet-name>
-		<servlet-class>controller.EditMachineServlet</servlet-class>
+		<servlet-class>service.EditMachineServlet</servlet-class>
 	</servlet>
 
 	<servlet-mapping>

@@ -1,4 +1,4 @@
-package monitor;
+package controller;
 
 
 import javax.servlet.http.HttpServletRequest;
@@ -8,7 +8,7 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.servlet.ModelAndView;
 
-import domain.LoginForm;
+import model.LoginForm;
 
 @Controller
 public class LoginController {
@@ -18,9 +18,9 @@ public class LoginController {
         ModelAndView mv = new ModelAndView("index/index","command","LOGIN SUCCESS, " + username);
         return mv;
     }
-    @RequestMapping(value="addTel")
+    @RequestMapping(value="add")
     public ModelAndView getAddTel(HttpServletRequest request,HttpServletResponse response){
-        ModelAndView mv = new ModelAndView("login/AddTel");
+        ModelAndView mv = new ModelAndView("device/add");
         return mv;
     }
 }

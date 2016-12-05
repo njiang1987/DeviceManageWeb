@@ -1,3 +1,3 @@
 <%
-    request.getRequestDispatcher("/WEB-INF/jsp/login/login.jsp").forward(request,response);
+    request.getRequestDispatcher("/machine").forward(request,response);
 %>

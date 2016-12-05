@@ -1,4 +1,4 @@
-package controller;
+package service;
 
 /**
  * Created by wanghua on 16/7/16.
@@ -59,7 +59,7 @@ public class EditMachineServlet extends HttpServlet {
 
         packageData doPackage = new packageData(); 
             
-        doPackage.executePackage("insert into tel_information(imei,tel_version,borrow_name,tel_name) values('" + imei + "','" + tel_version + "','" + borrow_name + "','" + tel_name + "')");
+        doPackage.executePackage("insert into tel_information(plantform,imei,tel_version,borrow_name,tel_name) values('"+ plantform + "','" + imei + "','" + tel_version + "','" + borrow_name + "','" + tel_name + "')");
         
         System.out.println("插入成功。");
         response.sendRedirect("success");
