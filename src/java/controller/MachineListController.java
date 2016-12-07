@@ -30,7 +30,7 @@ public class MachineListController {
   @RequestMapping(value = "/machinelist")
   @ResponseBody
   public String showlist() throws SQLException,IOException {
-    return JSON.toJSONString(packageListService.getlist("select * from machine  order by id DESC"));
+    return JSON.toJSONString(packageListService.getlist("select * from tel_information  order by id DESC"));
   }
   @RequestMapping(value = "/machine")
   public ModelAndView showPackageListProject() throws Exception {
@@ -39,7 +39,7 @@ public class MachineListController {
 
     packageData doPackage =new packageData();
     //取得总记录数
-    int totalPageSize = doPackage.selectPackage("select count(*) from machine");
+    int totalPageSize = doPackage.selectPackage("select count(*) from tel_information");
     mv.addObject("totalPageSize",totalPageSize);
 //    mv.addObject("jobExist",jobExist);
 

@@ -6,6 +6,8 @@
 <head>
 <link href="<c:url value="/resources/css/index.css" />" rel="stylesheet">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<script src="http://cdn.bootcss.com/jquery/2.1.4/jquery.min.js"></script>
+<script src="${pageContext.request.contextPath}/resources/js/machine.js"></script>	
 <title>手机归属列表</title>
 </head>
 <body>
@@ -18,18 +20,6 @@
         <br>
       </div>
     </div>
-
-    <%--<div class="row">--%>
-      <%--<div class="col s12">--%>
-      <%--<ul class="collection with-header">--%>
-        <%--<li class="collection-item"><table><tr ><td align="center" >构建地址:<font  color="red">开发主干(svn://192.168.51.199/mobile/Android/CarAppAs/CarUser)</font></td><td align="center">--%>
-            <%--<button id="packaging" class="waves-effect waves-light btn" type="button" onclick="javascript:{this.disabled=true;}" >点击打包</button>--%>
-        <%--</td></tr>--%>
-        <%--</table></li>--%>
-      <%--</ul>--%>
-    <%--</div>--%>
-    <%--</div>--%>
-
 
     <div class="row">
       <div class="col s12">

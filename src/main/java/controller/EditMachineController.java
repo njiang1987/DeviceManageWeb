@@ -28,25 +28,27 @@ public class EditMachineController {
 
       packageData doPackage =new packageData();
       String machineInfo ="";
-//      if(edit !=null) {
-//          machineInfo = doPackage.selectMachineInfo("select id,platform,model,nub,user,modify,os from machine where id =" + edit + "");
+    
+          machineInfo = doPackage.selectMachineInfo("select * from tel_information");
+          
 //          //取值
 //          String [] machineInfoSplit = machineInfo.split("\\|");
 //          mv.addObject("id", machineInfoSplit[0]);
-//          mv.addObject("platform", machineInfoSplit[1]);
-//          mv.addObject("model", machineInfoSplit[2]);
-//          mv.addObject("nub", machineInfoSplit[3]);
-//          mv.addObject("user", machineInfoSplit[4]);
-//          mv.addObject("modify", machineInfoSplit[5]);
-//          mv.addObject("os", machineInfoSplit[6]);
-//      }
-
-      //取项目名
-//      HashMap<String,String> projectlist = new HashMap<String,String>();
+//          mv.addObject("create_time", machineInfoSplit[1]);
+//          mv.addObject("plantform", machineInfoSplit[2]);
+//          mv.addObject("imei", machineInfoSplit[3]);
+//          mv.addObject("tel_name", machineInfoSplit[4]);
+//          mv.addObject("tel_version", machineInfoSplit[5]);
+//          mv.addObject("borrow_name", machineInfoSplit[6]);
+//          mv.addObject("borrow_time", machineInfoSplit[7]);
+//          mv.addObject("operation", machineInfoSplit[8]);
+//      
+//
+//      //取项目名
+////      HashMap<String,String> projectlist = new HashMap<String,String>();
 //      projectlist = doPackage.selectMachineModifyInfo("select id,projectname from project order by id DESC");
-//      mv.addObject("projectlist", projectlist);
-
-      return mv;
+//        mv.addObject("projectlist", machineInfo);
+        return mv;
   }
 
 
