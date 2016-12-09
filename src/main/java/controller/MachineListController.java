@@ -44,12 +44,10 @@ public class MachineListController {
 	  return result;
   }
   
- 
-  
   @RequestMapping(value = "/machine")
   public ModelAndView showPackageListProject() throws Exception {
     ModelAndView mv = new ModelAndView("device/list");   
-    packageData doPackage =new packageData();  
+    packageData doPackage =new packageData();
     
     //取得总记录数
     int totalPageSize = doPackage.selectPackage("select count(*) from tel_information");
