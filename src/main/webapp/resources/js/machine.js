@@ -43,15 +43,15 @@ $(document).ready(function() {
             if (j < info.length) {
                 content += "<tr>"
                     + "<td data-title='序号' >" + (j+1) + "</td>"
-                    + "<td data-title='创建时间'>" + info[j].createtime + "</td>"
                     + "<td data-title='平台'>" + info[j].plantform + "</td>"
                     + "<td data-title='编号'>" + info[j].imei + "</td>"
                     + "<td data-title='手机名称'>" + info[j].tel_name + "</td>"
                     + "<td data-title='手机版本'>" + info[j].tel_version + "</td>"
                     + "<td data-title='借用人'>" + info[j].borrow_name + "</td>"
-                    + "<td data-title='借用时间'>"+ info[j].modify + "</td>"
+                    + "<td data-title='借用时间'>"+ info[j].borrow_time + "</td>"
+                    + "<td data-title='创建时间'>" + info[j].create_time + "</td>"
                     + "<td data-title='操作'><a href=\"editMachine?edit=" + info[j].id + "\" >编辑</a>&nbsp&nbsp<a href=\"machineModifyInfo?mid=" + info[j].id + "\" >记录</a></td></tr>";
-
+                
             }
         }
         $("#machinelist").html(content);

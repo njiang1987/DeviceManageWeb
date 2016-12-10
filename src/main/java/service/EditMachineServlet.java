@@ -42,24 +42,16 @@ public class EditMachineServlet extends HttpServlet {
         //从页面获取参数
         String id = request.getParameter("id");
         String plantform = request.getParameter("plantform");
-     
+        
         String imei = request.getParameter("imei");
         String tel_version = request.getParameter("tel_version");
         String borrow_name = request.getParameter("borrow_name");
         String borrow_time = request.getParameter("borrow_time");
         String tel_name=request.getParameter("tel_name");
         
-//        Enumeration<String> paramNames = request.getParameterNames();//获取所有的参数名
-//        while (paramNames.hasMoreElements()) {
-//            String name = paramNames.nextElement();//得到参数名
-//            String value = request.getParameter(name);//通过参数名获取对应的值
-//            System.out.println(MessageFormat.format("{0}={1}", name,value));
-//        }
-
-
         packageData doPackage = new packageData(); 
-            
-        doPackage.executePackage("insert into tel_information(plantform,imei,tel_version,borrow_name,tel_name) values('"+ plantform + "','" + imei + "','" + tel_version + "','" + borrow_name + "','" + tel_name + "')");
+        
+        doPackage.executePackage("insert into tel_information(plantform,imei,tel_version,borrow_name,tel_name,borrow_time) values('"+ plantform + "','" + imei + "','" + tel_version + "','" + borrow_name + "','" + tel_name + "','" + borrow_time + "')");
         
         System.out.println("插入成功。");
         response.sendRedirect("success");

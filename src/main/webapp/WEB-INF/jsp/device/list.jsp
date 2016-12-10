@@ -26,14 +26,14 @@
         <table class="bordered">
           <thead id="t_head">
           <tr>
-            <th>序号</th>
-            <th>创建时间</th>
+            <th>序号</th> 
             <th>平台</th>
             <th>编号</th>
             <th>手机名称</th>
             <th>手机版本</th>
             <th>借用人</th>
             <th>借用时间</th>
+            <th>创建时间</th>
             <th>操作</th>
           </tr>
           </thead>

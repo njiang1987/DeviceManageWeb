@@ -4,6 +4,8 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<script language="javascript" type="text/javascript" src="../js/datepicker/WdatePicker.js"></script>
+                  
 <title>欢迎来到这个页面~~</title>
 </head>
 <body>
@@ -59,7 +61,8 @@
           <label for="user">使用人</label>
         </div>
       </div>
-     
+      
+      <input type="text"  id="temp"   name ="borrow_time"   onfocus="WdatePicker({dateFmt:'yyyy-MM-dd HH:mm'})"/>
       <div class="row">
         <button class="btn waves-effect waves-light" type="submit" name="action">确定
           <i class="mdi-content-send right"></i>
