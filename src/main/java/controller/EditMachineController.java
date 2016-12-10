@@ -23,15 +23,18 @@ public class EditMachineController {
 
   @RequestMapping(value = "/editMachine", method = RequestMethod.GET)
   public ModelAndView  EditMachine(HttpServletRequest request) throws Exception {
-    ModelAndView mv = new ModelAndView("editMachine");
 
+         ModelAndView mv = new ModelAndView("editMachine");
 
-      packageData doPackage =new packageData();
-      String machineInfo ="";
-    
-          machineInfo = doPackage.selectMachineInfo("select * from tel_information");
+//      packageData doPackage =new packageData();
+//      String machineInfo ="";
+//      machineInfo = doPackage.selectMachineInfo("select * from tel_information");
           
 
+//      //取项目名
+//      HashMap<String,String> projectlist = new HashMap<String,String>();
+//      projectlist = doPackage.selectMachineModifyInfo("select id,projectname from project order by id DESC");
+//      mv.addObject("projectlist", machineInfo);
         return mv;
   }
 
